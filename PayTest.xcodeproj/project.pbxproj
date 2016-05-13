@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		18CF631C1AAFE09200C6599E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF631B1AAFE09200C6599E /* main.m */; };
 		18CF631F1AAFE09200C6599E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF631E1AAFE09200C6599E /* AppDelegate.m */; };
-		18CF63221AAFE09200C6599E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF63211AAFE09200C6599E /* ViewController.m */; };
+		18CF63221AAFE09200C6599E /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18CF63211AAFE09200C6599E /* ViewController.mm */; };
 		18CF63251AAFE09200C6599E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CF63231AAFE09200C6599E /* Main.storyboard */; };
 		18CF63271AAFE09200C6599E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CF63261AAFE09200C6599E /* Images.xcassets */; };
 		18CF632A1AAFE09200C6599E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CF63281AAFE09200C6599E /* LaunchScreen.xib */; };
 		18CF63361AAFE09200C6599E /* PayTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CF63351AAFE09200C6599E /* PayTestTests.m */; };
+		18CF63411AAFE26900C6599E /* libUPPayPlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CF63401AAFE26900C6599E /* libUPPayPlugin.a */; };
+		18CF63451AAFE2AB00C6599E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CF63441AAFE2AB00C6599E /* QuartzCore.framework */; };
+		18CF63471AAFE2F000C6599E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CF63461AAFE2F000C6599E /* Security.framework */; };
+		18CF63491AAFEF2A00C6599E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CF63481AAFEF2A00C6599E /* Default-568h@2x.png */; };
+		18CF634E1AB022E900C6599E /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CF634B1AB022E900C6599E /* libWeChatSDK.a */; };
+		18CF63531AB0234E00C6599E /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18CF63501AB0234E00C6599E /* payRequsestHandler.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18CF63541AB0234E00C6599E /* TenpayUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 18CF63521AB0234E00C6599E /* TenpayUtil.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +40,26 @@
 		18CF631D1AAFE09200C6599E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18CF631E1AAFE09200C6599E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18CF63201AAFE09200C6599E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18CF63211AAFE09200C6599E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18CF63211AAFE09200C6599E /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		18CF63241AAFE09200C6599E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18CF63261AAFE09200C6599E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18CF63291AAFE09200C6599E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		18CF632F1AAFE09200C6599E /* PayTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CF63341AAFE09200C6599E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18CF63351AAFE09200C6599E /* PayTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayTestTests.m; sourceTree = "<group>"; };
+		18CF63401AAFE26900C6599E /* libUPPayPlugin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUPPayPlugin.a; sourceTree = "<group>"; };
+		18CF63421AAFE28400C6599E /* UPPayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPlugin.h; sourceTree = "<group>"; };
+		18CF63431AAFE28400C6599E /* UPPayPluginDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPayPluginDelegate.h; sourceTree = "<group>"; };
+		18CF63441AAFE2AB00C6599E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18CF63461AAFE2F000C6599E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18CF63481AAFEF2A00C6599E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		18CF634B1AB022E900C6599E /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		18CF634C1AB022E900C6599E /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		18CF634D1AB022E900C6599E /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		18CF634F1AB0234E00C6599E /* payRequsestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payRequsestHandler.h; sourceTree = "<group>"; };
+		18CF63501AB0234E00C6599E /* payRequsestHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = payRequsestHandler.mm; sourceTree = "<group>"; };
+		18CF63511AB0234E00C6599E /* TenpayUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenpayUtil.h; sourceTree = "<group>"; };
+		18CF63521AB0234E00C6599E /* TenpayUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TenpayUtil.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CF63471AAFE2F000C6599E /* Security.framework in Frameworks */,
+				18CF63451AAFE2AB00C6599E /* QuartzCore.framework in Frameworks */,
+				18CF634E1AB022E900C6599E /* libWeChatSDK.a in Frameworks */,
+				18CF63411AAFE26900C6599E /* libUPPayPlugin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +87,8 @@
 		18CF630D1AAFE09200C6599E = {
 			isa = PBXGroup;
 			children = (
+				18CF63461AAFE2F000C6599E /* Security.framework */,
+				18CF63441AAFE2AB00C6599E /* QuartzCore.framework */,
 				18CF63181AAFE09200C6599E /* PayTest */,
 				18CF63321AAFE09200C6599E /* PayTestTests */,
 				18CF63171AAFE09200C6599E /* Products */,
@@ -81,10 +107,12 @@
 		18CF63181AAFE09200C6599E /* PayTest */ = {
 			isa = PBXGroup;
 			children = (
+				18CF634A1AB0227300C6599E /* WXpay */,
+				18CF633F1AAFE24500C6599E /* UPPay */,
 				18CF631D1AAFE09200C6599E /* AppDelegate.h */,
 				18CF631E1AAFE09200C6599E /* AppDelegate.m */,
 				18CF63201AAFE09200C6599E /* ViewController.h */,
-				18CF63211AAFE09200C6599E /* ViewController.m */,
+				18CF63211AAFE09200C6599E /* ViewController.mm */,
 				18CF63231AAFE09200C6599E /* Main.storyboard */,
 				18CF63261AAFE09200C6599E /* Images.xcassets */,
 				18CF63281AAFE09200C6599E /* LaunchScreen.xib */,
@@ -96,6 +124,7 @@
 		18CF63191AAFE09200C6599E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18CF63481AAFEF2A00C6599E /* Default-568h@2x.png */,
 				18CF631A1AAFE09200C6599E /* Info.plist */,
 				18CF631B1AAFE09200C6599E /* main.m */,
 			);
@@ -117,6 +146,30 @@
 				18CF63341AAFE09200C6599E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18CF633F1AAFE24500C6599E /* UPPay */ = {
+			isa = PBXGroup;
+			children = (
+				18CF63421AAFE28400C6599E /* UPPayPlugin.h */,
+				18CF63431AAFE28400C6599E /* UPPayPluginDelegate.h */,
+				18CF63401AAFE26900C6599E /* libUPPayPlugin.a */,
+			);
+			name = UPPay;
+			sourceTree = "<group>";
+		};
+		18CF634A1AB0227300C6599E /* WXpay */ = {
+			isa = PBXGroup;
+			children = (
+				18CF634F1AB0234E00C6599E /* payRequsestHandler.h */,
+				18CF63501AB0234E00C6599E /* payRequsestHandler.mm */,
+				18CF63511AB0234E00C6599E /* TenpayUtil.h */,
+				18CF63521AB0234E00C6599E /* TenpayUtil.mm */,
+				18CF634B1AB022E900C6599E /* libWeChatSDK.a */,
+				18CF634C1AB022E900C6599E /* WXApi.h */,
+				18CF634D1AB022E900C6599E /* WXApiObject.h */,
+			);
+			name = WXpay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CF63251AAFE09200C6599E /* Main.storyboard in Resources */,
+				18CF63491AAFEF2A00C6599E /* Default-568h@2x.png in Resources */,
 				18CF632A1AAFE09200C6599E /* LaunchScreen.xib in Resources */,
 				18CF63271AAFE09200C6599E /* Images.xcassets in Resources */,
 			);
@@ -219,7 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CF63221AAFE09200C6599E /* ViewController.m in Sources */,
+				18CF63221AAFE09200C6599E /* ViewController.mm in Sources */,
+				18CF63531AB0234E00C6599E /* payRequsestHandler.mm in Sources */,
+				18CF63541AB0234E00C6599E /* TenpayUtil.mm in Sources */,
 				18CF631F1AAFE09200C6599E /* AppDelegate.m in Sources */,
 				18CF631C1AAFE09200C6599E /* main.m in Sources */,
 			);
@@ -342,20 +398,42 @@
 		18CF633A1AAFE09200C6599E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PayTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayTest",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
 		18CF633B1AAFE09200C6599E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PayTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayTest",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
